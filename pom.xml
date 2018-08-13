@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>telran</groupId>
-	<artifactId>cars</artifactId>
+	<artifactId>Employee</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>cars</name>
+	<name>Employees</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
