@@ -3,8 +3,7 @@ package telran.employee.dto;
 public interface EmployeeApiConstants {
 
     String ADD = "employee/add";
-    String GET = "employee?id";
-    String EMAIL = "employee?emailAddress";
+    String GET = "employee?id={id}";
     String GETALL = "employees";
-    String REMOVE = "employee/remove?id";
+    String REMOVE = "employee/remove?id={id}";
 }

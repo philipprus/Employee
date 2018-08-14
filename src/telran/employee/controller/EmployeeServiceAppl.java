@@ -30,7 +30,7 @@ public class EmployeeServiceAppl {
 
 
 
-    @GetMapping(value = EmployeeApiConstants.REMOVE)
+    @DeleteMapping(value = EmployeeApiConstants.REMOVE)
     EmployeeReturnCode removeEmployee(@RequestBody int id){
         return employees.removeEmployee(id);
     }
