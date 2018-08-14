@@ -33,6 +33,27 @@ public class Employee implements Serializable {
         return emailAddress;
     }
 
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
     @Override
     public String toString() {
         return "Employee{" +

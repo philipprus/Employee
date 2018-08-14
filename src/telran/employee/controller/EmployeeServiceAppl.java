@@ -4,10 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import telran.employee.dto.Employee;
 import telran.employee.dto.EmployeeApiConstants;
@@ -19,6 +16,7 @@ import java.util.HashMap;
 
 @SpringBootApplication
 @RestController
+@CrossOrigin
 @ComponentScan({"telran.employee.model"})
 
 public class EmployeeServiceAppl {
