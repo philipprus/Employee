@@ -3,7 +3,6 @@ package telran.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,11 +13,10 @@ import telran.dto.EmployeeReturnCode;
 import telran.model.IEmployee;
 
 import java.util.HashMap;
-import java.util.List;
+
 
 @SpringBootApplication
 @RestController
-@ComponentScan({"telran.model"})
 
 public class EmployeeServiceAppl {
     @Autowired

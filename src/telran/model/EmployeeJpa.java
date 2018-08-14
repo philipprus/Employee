@@ -4,9 +4,7 @@ import org.springframework.stereotype.Service;
 import telran.dto.Employee;
 import telran.dto.EmployeeReturnCode;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 @Service
 public class EmployeeJpa implements IEmployee {
@@ -34,15 +32,13 @@ public class EmployeeJpa implements IEmployee {
 
     @Override
     public HashMap<Integer,Employee> getAll() {
-
         return employees;
     }
 
     @Override
     public Employee getEmployee(int id) {
        Employee employee = employees.get(id);
-            return employee==null? null: employee;
-
-
+       return employee;
     }
+
 }
